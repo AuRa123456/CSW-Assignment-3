@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form>
+    <input id="field1" type="text" value="Field 1">
+    <input id="field2" type="text" value="Field 2">
+  </form>
+
+  <script>
+    $(document).ready(function() {
+      $("#field1").blur(function() {
+        alert("Field1 has lost focus.");
+      });
+    });
+  </script>
+</body>
+</html>

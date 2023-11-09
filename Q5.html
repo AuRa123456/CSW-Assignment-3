@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <button id="slideDownButton">Slide Down</button>
+  <button id="animateButton">Animate</button>
+  <button id="fadeInButton">Fade In</button>
+  <button id="hideButton">Hide</button>
+  <button id="showButton">Show</button>
+  <p id="mouseEventPara">Mouse Enter/Leave</p>
+  <p id="dblclickPara">Double Click</p>
+  <button id="attrButton">Change Attribute</button>
+  <button id="htmlButton">Change HTML Content</button>
+
+  <script>
+    $(document).ready(function() {
+      // Slide Down
+      $("#slideDownButton").click(function() {
+        $("#box").slideDown();
+      });
+
+      // Animate
+      $("#animateButton").click(function() {
+        $("#box").animate({
+          width: "toggle",
+          height: "toggle",
+          opacity: "toggle"
+        });
+      });
+
+      // Fade In
+      $("#fadeInButton").click(function() {
+        $("#box").fadeIn();
+      });
+
+      // Hide
+      $("#hideButton").click(function() {
+        $("#box").hide();
+      });
+
+      // Show
+      $("#showButton").click(function() {
+        $("#box").show();
+      });
+
+      // Mouse Enter
+      $("#mouseEventPara").mouseenter(function() {
+        alert("Mouse entered the paragraph.");
+      });
+
+      // Double Click
+      $("#dblclickPara").dblclick(function() {
+        alert("Double-clicked the paragraph.");
+      });
+
+      // Mouse Leave
+      $("#mouseEventPara").mouseleave(function() {
+        alert("Mouse left the paragraph.");
+      });
+
+      // Change Attribute
+      $("#attrButton").click(function() {
+        $("#box").attr("title", "New Title Attribute");
+      });
+
+      // Change HTML Content
+      $("#htmlButton").click(function() {
+        $("#box").html("New HTML Content");
+      });
+    });
+  </script>
+</body>
+</html>

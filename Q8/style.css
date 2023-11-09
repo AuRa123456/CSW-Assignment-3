@@ -1,0 +1,28 @@
+.job {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .filters {
+    margin: 20px 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  select {
+    padding: 5px;
+  }
+  
+  .filters label {
+    font-weight: bold;
+  }
+  
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+  }  

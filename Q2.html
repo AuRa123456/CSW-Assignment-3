@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <p id="myParagraph">Click here!</p>
+
+  <script>
+    $(document).ready(function() {
+      $("#myParagraph").click(function() {
+        alert("You clicked the paragraph!");
+      });
+
+      $("#myParagraph").dblclick(function() {
+        alert("You double-clicked the paragraph!");
+      });
+    });
+  </script>
+</body>
+</html>
